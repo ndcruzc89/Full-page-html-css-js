@@ -1,0 +1,90 @@
+/* ********************** Reset CSS ***************** */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --font-size: 16px;
+    --color-header: #fff;
+}
+
+html {
+    box-sizing: border-box; 
+    font-family: var(--main-font); 
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+/* ********************** Header ***************** */
+.header {
+    color: var(--color-header);
+    display: grid;
+    grid-template-rows: 60px 1fr;   
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.nav {
+    background-color: #0e1111;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__title {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.nav__menu {
+    cursor: pointer; 
+    display: block;
+} 
+
+.nav__img {
+    width: 30px;
+}
+
+.nav__bar {
+    display: none;
+}
+
+/* .nav__bar--menu{
+
+} */
+
+.hero {
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/computer.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    display: grid;
+    align-content: center;
+    grid-auto-rows: max-content;
+    text-align: center;
+    row-gap: 1em;
+}
+
+.hero__title {
+    font-size: 2rem;
+}
+
+.hero__paragraph {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #1789fc;
+    padding: 13px 30px;
+    justify-self: center;
+    color: var(--color-header);
+    text-decoration: none;
+    border-radius: 30px;
+}
+
