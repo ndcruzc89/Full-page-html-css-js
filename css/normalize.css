@@ -10,23 +10,36 @@
 
  *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
  }
         
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth; /* Smooth transition with mouse scroll */
   }
   
   /* Sections
      ========================================================================== */
-  
+
+  /* 
+   * All HTML elements inherit box-sizing
+   */
+
+  /* *,
+  *::before,
+  *::after {
+      box-sizing: inherit;  
+  } */
+
   /**
    * Remove the margin in all browsers.
    */
   
   body {
     margin: 0;
+    overflow-x: hidden; /* What overflows on the horizontal is hidden*/
   }
   
   /**
@@ -152,6 +165,7 @@
   
   img {
     border-style: none;
+    max-width: 100%;
   }
   
   /* Forms

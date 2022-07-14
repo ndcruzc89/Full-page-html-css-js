@@ -8,7 +8,7 @@
     <title>DeveloperCourses</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 
@@ -69,37 +69,37 @@
 
             <div class="features__container">
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/calendar.svg" class="features__icon" alt="calendar">
                     <h3 class="features__subtitle">Study oriented to your objectives</h3>
                     <p class="features__paragraph">You can start from scratch, without any commitment and customizable at your own pace. You can enter the platform in the time available to you.</p>
                 </article>
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/online.svg" class="features__icon" alt="online">
                     <h3 class="features__subtitle">100% online</h3>
                     <p class="features__paragraph">For your convenience, you can take any of our courses remotely, thanks to the platform we have designed for you.</p>
                 </article>
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/plataform.svg" class="features__icon" alt="plataform">
                     <h3 class="features__subtitle">Unique platform</h3>
                     <p class="features__paragraph">You will live the best learning experience thanks to the comfort, design and material available on the platform made by expert trainers.</p>
                 </article>
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/teacher.svg" class="features__icon" alt="teacher">
                     <h3 class="features__subtitle">The best teachers</h3>
                     <p class="features__paragraph">We have great professional trainers, who are in charge of uploading all the content to our platform.</p>
                 </article>
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/cv.svg" class="features__icon" alt="cv">
                     <h3 class="features__subtitle">Personalized coaching</h3>
                     <p class="features__paragraph">During the training you will receive advice to improve your CV and we will also prepare you to face any interview.</p>
                 </article>
 
-                <article class="features__description">
+                <article class="features__card">
                     <img src="./img/job.svg" class="features__icon" alt="job">
                     <h3 class="features__subtitle">Good job and good salary</h3>
                     <p class="features__paragraph">At the end of any of our courses we will help you find work with large companies, so that you can access positions that have high salaries.</p>
@@ -111,7 +111,7 @@
         <section class="programs">
             <h2 class="programs__title">Our Programs</h2>
 
-            <div class="programs__table">
+            <div class="programs__container">
 
                 <div class="programs__card">
                     <h3 class="programs__name">Front-End</h3>
@@ -137,7 +137,7 @@
                             <h4 class="programs__course">Angular</h4>
                         </div>
                     </div>
-                    <a href="#" class="programs__btn"></a>
+                    <a href="#" class="programs__btn">More Info</a>
                 </div>
 
                 <div class="programs__card">
@@ -164,7 +164,7 @@
                             <h4 class="programs__course">C#</h4>
                         </div>
                     </div>
-                    <a href="#" class="programs__btn"></a>
+                    <a href="#" class="programs__btn">More Info</a>
                 </div>
 
                 <div class="programs__card">
@@ -191,7 +191,7 @@
                             <h4 class="programs__course">Serverless</h4>
                         </div>
                     </div>
-                    <a href="#" class="programs__btn"></a>
+                    <a href="#" class="programs__btn">More Info</a>
                 </div>
 
             </div>
@@ -202,28 +202,36 @@
             <div class="reviews__container">
                 <img src="./img/left-arrow.svg" alt="left-arrow" class="reviews__arrow">
 
-                <div class="reviews__body" data-id="1">
+                <div class="reviews__card" data-id="1">
                     <div class="reviews__texts">
                         <h2 class="reviews__subtitle">Kevin Perez</h2>
                         <p class="reviews__testimony">It's amazing everything that DeveloperCourses offers, its platform, its teachers, its teaching methodology and above all that I was able to get a job as a programmer.</p>
                     </div>
-                    <img src="./img/kevin.jpg" alt="kevin" class="reviews__img">
+                    <div class="reviews__picture">
+                        <img src="./img/kevin.jpg" alt="kevin" class="reviews__img">
+                    </div>
+                    
                 </div>
 
-                <div class="reviews__body" data-id="2">
+                <div class="reviews__card" data-id="2">
                     <div class="reviews__texts">
                         <h2 class="reviews__subtitle">Kelly Harris</h2>
                         <p class="reviews__testimony">I have been studying for four 5 months in DeveloperCourses and thanks to this training I am working as a Front-End developer in a company.</p>
                     </div>
-                    <img src="./img/kelly.jpg" alt="kelly" class="reviews__img">
+                    <div class="reviews__picture">
+                        <img src="./img/kelly.jpg" alt="kelly" class="reviews__img">
+                    </div>
+                    
                 </div>
 
-                <div class="reviews__body" data-id="3">
+                <div class="reviews__card" data-id="3">
                     <div class="reviews__texts">
                         <h2 class="reviews__subtitle">Taylor Parker</h2>
                         <p class="reviews__testimony">I started studying at the end of October and in April of the following year I was already signing my contract as a Back-end programmer.</p>
                     </div>
-                    <img src="./img/taylor.jpg" alt="taylor" class="reviews__img">
+                    <div class="reviews__picture">
+                        <img src="./img/taylor.jpg" alt="taylor" class="reviews__img">
+                    </div>
                 </div>
 
                 <div class="reviews__body" data-id="4">
@@ -231,7 +239,9 @@
                         <h2 class="reviews__subtitle">Karen Arteaga</h2>
                         <p class="reviews__testimony">I am very happy because thanks to DeveloperCourses I was able to learn about new technologies and get my job as a FullStack developer.</p>
                     </div>
-                    <img src="./img/karen.jpg" alt="karen" class="reviews__img">
+                    <div class="reviews__picture">
+                        <img src="./img/karen.jpg" alt="karen" class="reviews__img">
+                    </div>
                 </div>
 
                 <img src="./img/right-arrow.svg" alt="right-arrow" class="reviews__arrow">
@@ -241,61 +251,55 @@
 
         <!-- Frequent Questions -->
         <section class="questions">
-            <h2 class="questions__subtitle">Frequent Questions</h2>
+            <h2 class="questions__title">Frequent Questions</h2>
             
             <div class="questions__container">
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">How can I finance my course?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">How can I finance my course?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">We will help you choose the perfect plan that suits your needs.</p>
                 </div>
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">Do I need to have programming knowledge or some experience to apply?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">Do I need to have programming knowledge or some experience to apply?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">No, you can start from scratch and without any experience, thanks to the incredible material we have for you, you will live the best learning experience.</p>
                 </div>
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">Can I apply to any of the courses?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">Can I apply to any of the courses?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">Yes, the important thing is the attitude, the vision, the motivation and the effort you put into learning and developing the exercises and projects.</p>
                 </div>
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">How many hours a week should I study?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">How many hours a week should I study?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">You will be able to study at the time of your accommodation, since the schedules are totally flexible. Although if you want to advance quickly, it is recommended that you dedicate around 40 hours a week.</p>
                 </div>
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">Will I get a certificate upon graduation?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">Will I get a certificate upon graduation?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">Yes, it is a DeveloperCourses own certificate.</p>
                 </div>
 
-                <div class="questions__answer">
-                    <h3 class="questions__title">Can I find a job after taking any of the courses?
-                        <span class="questions__arrow">
-                            <img src="./img/arrow.svg" alt="arrow" class="questions__img">
-                        </span>
-                    </h3>
+                <div class="questions__card">
+                    <div class="questions__header">
+                        <h3 class="questions__subtitle">Can I find a job after taking any of the courses?</h3>
+                        <img src="./img/arrow.svg" alt="arrow" class="questions__img">
+                    </div>
                     <p class="questions__show">Of course, we will help you find a job, for which we will advise you by improving your resume and preparing you for interviews. Although it is necessary that you develop all the exercises, together with all the projects and have the best motivation in the program.</p>
                 </div>
 
@@ -304,14 +308,65 @@
 
         <!-- Offer -->
         <section class="offer">
-            <h2 class="offer__subtitle">Are you ready to start today?</h2>
+            <h2 class="offer__title">Are you ready to start today?</h2>
             <p class="offer__paragraph">The world of development awaits you, it is the best decision you can make.</p>
             <a href="#" class="btn">Apply now</a>
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer class="footer">
+
+        <section class="footer__container">
+            
+            <!-- Nav Footer-->
+            <nav class="nav nav--footer">
+                <h2 class="nav__title--footer">DeveloperCourses</h2>
+
+                <ul class="nav__bar nav__bar--footer">
+                    <li class="nav__item nav__item--footer">
+                        <a href="#" class="nav__link nav__link--footer">Features</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                        <a href="#" class="nav__link nav__link--footer">Programs</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                        <a href="#" class="nav__link nav__link--footer">Reviews</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                        <a href="#" class="nav__link nav__link--footer">Frequent Questions</a>
+                    </li>
+                    <li class="nav__item nav__item--footer">
+                        <a href="#" class="nav__link nav__link--footer">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Newsletter-->
+            <div class="footer__newsletter">
+                <h2 class="footer__subtitle">Subscribe to our Newsletter</h2>
+                <p class="footer__paragraph">Join our Newsletter to get interesting news, special offers and more.</p>
+
+                <form action="#" class="footer__form">
+                    <input type="email" placeholder="Enter your Email" class="footer__input">
+                    <input type="submit" value="Suscribe" class="footer__submit">
+                </form>
+            </div>
+        </section>
+
+        <!-- Social and Copyright -->
+        <section class="footer__copy">
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><img src="./img/facebook.svg" alt="facebook" class="footer__img"></a>
+                <a href="#" class="footer__icon"><img src="./img/twitter.svg" alt="twitter" class="footer__img"></a>
+                <a href="#" class="footer__icon"><img src="./img/linkedin.svg" alt="linkedin" class="footer__img"></a>
+                <a href="#" class="footer__icon"><img src="./img/youtube.svg" alt="youtube" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Nelson Cruz &copy; All Rights Reserved | Privacy Policy</h3>
+        </section>
 
     </footer>
 
