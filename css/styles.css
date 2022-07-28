@@ -63,6 +63,11 @@ html {
 
 } */
 
+/* .nav__item {
+    font-weight: 300;
+    padding: 17px 0 12px 40px;
+} */
+
 .nav__menu {
     cursor: pointer; 
 } 
@@ -83,7 +88,7 @@ html {
     justify-content: center;
     text-align: center;
     width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .hero__title {
@@ -112,7 +117,6 @@ html {
 /* **** Features ***** */
 .features {
     text-align: center;
-    /* margin: 0 auto; */
 }
 
 .features__title {
@@ -163,7 +167,7 @@ html {
 .programs {
     text-align: center;
     background-color: var(--extra-light-grey);
-    margin: 50px 0;
+    margin: 50px auto;
     padding-bottom: 80px;
     color: var(--light-grey);
     width: 100%;
@@ -359,8 +363,6 @@ html {
     object-fit: cover;
     object-position: 50% 30%;
     margin-bottom: 80px;
-
-    /* border: 1px solid var(--green); */
 }
 
 /* **** Offer ***** */
@@ -383,3 +385,122 @@ html {
     line-height: 1.4;
     padding-bottom: 40px;
 }
+
+/* ********************** FOOTER ***************** */
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+}
+
+.footer__container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+    gap: 40px;
+    padding-top: 60px;
+}
+
+/* **** Nav Footer ***** */
+.nav--footer {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.nav__title--footer {
+    color: var(--green);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0px 20px 20px;
+    text-align: center;
+}
+
+.nav__item--footer {
+    list-style: none;
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 17px 0 12px 30px;
+}
+
+.nav__link--footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* **** Newsletter ***** */
+.footer__newsletter {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.footer__subtitle {
+    color: var(--green);
+    font-size: 1.2rem;
+    padding: 8px 0; 
+}
+
+.footer__paragraph {
+    line-height: 1.1;
+    text-align: start;
+    padding-bottom: 8px;
+}
+
+.footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.footer__input{
+    font-size: 0.8rem;
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;  
+}
+
+.footer__submit{
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 0.8rem;
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* **** Social and Copyright ***** */
+.footer__copy{
+    padding: 50px 0 15px;
+    text-align: center;
+}
+
+.footer__icon{
+    margin-bottom: 40px;
+}
+
+.footer__img{
+    width: 30px;
+}
+
+.footer__copyright{
+    font-weight: 100;
+    font-size: 0.9rem;
+    padding-bottom: 50px;
+}
+
+
+
