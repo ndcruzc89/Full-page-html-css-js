@@ -17,7 +17,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    /* scroll-behavior: smooth;  Smooth transition with mouse scroll */
+     scroll-behavior: smooth;  /*Smooth transition with mouse scroll */
   }
   
   /* Sections
@@ -39,7 +39,7 @@
   
   body {
     margin: 0;
-    overflow-x: hidden; /* What overflows on the horizontal is hidden*/
+     overflow-x: hidden; /*What overflows on the horizontal is hidden */
   }
   
   /**

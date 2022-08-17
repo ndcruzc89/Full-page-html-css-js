@@ -33,7 +33,9 @@ html {
 .header {
     color: var(--white);
     display: grid;
-    grid-template-rows: 60px 1fr;   
+    grid-template-rows: 60px 1fr;
+    justify-content: center;  
+    /* justify-items: center; */
     width: 100%;
     height: 100vh;
 }
@@ -41,7 +43,7 @@ html {
 /* **** Nav ***** */
 .nav {
     background-color: var(--black);
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -60,7 +62,6 @@ html {
 }
 
 /* .nav__bar--menu{
-
 } */
 
 /* .nav__item {
@@ -78,8 +79,8 @@ html {
 
 /* **** Hero ***** */
 .hero {
-    min-height: 650px;
-    max-height: 850px;
+    /* min-height: 650px;
+    max-height: 850px; */
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/computer.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
@@ -88,6 +89,7 @@ html {
     justify-content: center;
     text-align: center;
     width: 100%;
+    height: 100vh;
     /* z-index: -1; */
 }
 
@@ -135,9 +137,8 @@ html {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 30px;
-    
 }
 
 .features__card {
@@ -177,17 +178,15 @@ html {
     color: var(--dark-blue);
     font-size: 1.9rem;
     padding: 35px 20px 70px;
-
 }
 
 .programs__container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 40px;
-    
 }
 
 .programs__card {
@@ -248,7 +247,6 @@ html {
     color: var(--dark-blue);
     font-size: 1.8rem;
     padding: 20px;
-
 }
 
 .questions__container{
@@ -256,6 +254,7 @@ html {
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
     text-align: start;
@@ -278,6 +277,8 @@ html {
     color: var(--dark-blue);
     line-height: 1.1;
     font-size: 1.2rem;
+    margin-right: 20px;
+    padding-left: 0;
 }
 
 .questions_show {
@@ -300,14 +301,18 @@ html {
 
 .reviews__container {
     display: grid;
-    grid-template-columns: 40px 1fr 40px;
-    gap: 0.9em;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 0.8em;
     align-items: center;
-    justify-items: center;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .reviews__arrow{
-    width: 75%;
+    width: 31px;
+    height: 31px;
+    justify-self: center;
     cursor: pointer;
 }
 
@@ -399,7 +404,7 @@ html {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     gap: 40px;
     padding-top: 60px;
 }
@@ -437,7 +442,7 @@ html {
     width: 80%;
     padding: 0;
     display: block;
-    text-align: center;
+    text-align: start;
 }
 
 .footer__subtitle {
@@ -460,7 +465,7 @@ html {
 
 .footer__input{
     font-size: 0.8rem;
-    display: block;
+    /* display: block; */
     height: 40px;
     width: 100%;
     margin-bottom: 15px;
@@ -473,7 +478,7 @@ html {
     background-color: var(--green);
     color: var(--white);
     font-size: 0.8rem;
-    display: inline-block;
+    /* display: inline-block; */
     height: 40px;
     padding: 0 10px;
     border-radius: 6px;
@@ -502,5 +507,197 @@ html {
     padding-bottom: 50px;
 }
 
+/* =============================================== */
+/****************** MEDIA QUERIES **************** */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    /* ********************** HEADER ***************** */
+
+    /* **** Nav ***** */
+    .nav__title {
+        font-size: 1.3rem;
+    }
+
+    .nav__img {
+        width: 35px;
+    }
+
+    /* **** Hero ***** */
+    .hero {
+        font-size: 1.1rem;
+    }
+    
+    .hero__title {
+        font-size: 2.4rem;
+    }
+    
+    .hero__paragraph {
+        line-height: 1.3;
+    }
+
+    /* ********************** MAIN ***************** */
+
+    /* **** Features ***** */
+    .features__title {
+        font-size: 2.1rem;
+    }
+
+    .features__icon {
+        width: 43px;
+        height: 37px;
+    }
+
+    .features__subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .features__paragraph {
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
+
+    /* **** Programs ***** */
+    .programs__title {
+        font-size: 2.1rem;
+    }
+
+    .programs__card {
+        font-size: 1.1rem;
+    }
+
+    .programs__name {
+        font-size: 1.8rem;
+    }
+
+    .programs__item {
+        padding-left: 50px;
+    }
+
+    .programs__icon {
+        width: 25%;
+        height: 40px;
+    }
+
+    /* **** Frequent Questions ***** */
+    .questions__title {
+        font-size: 2rem;
+    }
+    
+    .questions__subtitle {
+        line-height: 1.2;
+        font-size: 1.3rem;
+    }
+
+    .questions__img {
+        width: 27px;
+        height: 27px;
+    }
+    
+    .questions_show {
+        font-size: 1.1rem;
+    }
+
+    /* **** Reviews ***** */
+    .reviews__titte {
+        font-size: 2.1rem;
+    }
+
+    .reviews__arrow{
+        width: 34px;
+        height: 34px;
+    }
+
+    .reviews__subtitle {
+        font-size: 1.6rem;
+        width: 210px;
+    }
+    
+    .reviews__testimony{
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+    
+    .reviews__img{
+        width: 210px;
+        height: 210px;
+    }
+
+    /* **** Offer ***** */
+    .offer {
+        font-size: 1.1rem;
+    }
+
+    .offer__title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    /* ********************** FOOTER ***************** */
+
+    /* **** Nav Footer ***** */
+    .nav__title--footer {
+        font-size: 1.7rem;
+    }
+    
+    .nav__item--footer {
+        font-size: 1rem;
+    }
+    
+    /* **** Newsletter ***** */
+    .footer__subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .footer__paragraph {
+        line-height: 1.2;
+        font-size: 1.1rem;
+    }
+
+    /* .footer__form {
+        justify-content: space-between;
+    } */
+    
+    .footer__input{
+        font-size: 0.9rem;
+        margin-right: 10px;
+        flex: 1;
+    } 
+    
+    .footer__submit{
+        font-size: 0.9rem;
+    }
+    
+    
+    /* **** Social and Copyright ***** */
+    .footer__img{
+        width: 35px;
+    }
+    
+    .footer__copyright{
+        font-size: 1rem;
+    }
 
 
+    
+
+
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
