@@ -21,21 +21,12 @@ html {
     font-size: var(--font-size);
 } 
 
-/* .container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: var(--container-width);
-    overflow: hidden;
-} */
-
-
 /* ********************** HEADER ***************** */
 .header {
     color: var(--white);
     display: grid;
     grid-template-rows: 60px 1fr;
     justify-content: center;  
-    /* justify-items: center; */
     width: 100%;
     height: 100vh;
 }
@@ -61,14 +52,6 @@ html {
     display: none;
 }
 
-/* .nav__bar--menu{
-} */
-
-/* .nav__item {
-    font-weight: 300;
-    padding: 17px 0 12px 40px;
-} */
-
 .nav__menu {
     cursor: pointer; 
 } 
@@ -79,8 +62,6 @@ html {
 
 /* **** Hero ***** */
 .hero {
-    /* min-height: 650px;
-    max-height: 850px; */
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/computer.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
@@ -88,9 +69,8 @@ html {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    /* z-index: -1; */
 }
 
 .hero__title {
@@ -112,7 +92,6 @@ html {
     text-decoration: none;
     border-radius: 30px;
 }
-
 
 /* ********************** MAIN ***************** */
 
@@ -181,7 +160,6 @@ html {
 }
 
 .programs__container {
-    /* margin: 0 auto; */
     display: grid;
     justify-content: center;
     align-content: center;
@@ -198,7 +176,6 @@ html {
     margin: 0 auto;
     border-radius: 15px;
     width: 80%;
-    
 }
 
 .programs__name {
@@ -218,7 +195,7 @@ html {
 }
 
 .programs__icon {
-    width: 20%;
+    width: 42px;
     height: 35px;
     object-fit: contain;
     margin-right: 15px;
@@ -249,13 +226,13 @@ html {
     padding: 20px;
 }
 
-.questions__container{
+.questions__container {
     display: grid;
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: start;
 }
@@ -281,7 +258,13 @@ html {
     padding-left: 0;
 }
 
-.questions_show {
+.questions__img {
+    width: 24px;
+    height: 24px;
+}
+
+.questions__show {
+    line-height: 1.1;
     color: var(--black);
 }
 
@@ -309,9 +292,9 @@ html {
     margin: 0 auto;
 }
 
-.reviews__arrow{
-    width: 31px;
-    height: 31px;
+.reviews__arrow {
+    width: 30px;
+    height: 30px;
     justify-self: center;
     cursor: pointer;
 }
@@ -354,16 +337,15 @@ html {
     width: 200px;
 }
 
-.reviews__testimony{
+.reviews__testimony {
     font-weight: 400;
     line-height: 1.3;
     color: var(--black);
-    
 }
 
-.reviews__img{
-    width: 200px;
-    height: 200px;
+.reviews__img {
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 30%;
@@ -376,7 +358,6 @@ html {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 90px;
-
 }
 
 .offer__title {
@@ -463,9 +444,8 @@ html {
     overflow: hidden;
 }
 
-.footer__input{
+.footer__input {
     font-size: 0.8rem;
-    /* display: block; */
     height: 40px;
     width: 100%;
     margin-bottom: 15px;
@@ -474,11 +454,10 @@ html {
     border: none;  
 }
 
-.footer__submit{
+.footer__submit {
     background-color: var(--green);
     color: var(--white);
     font-size: 0.8rem;
-    /* display: inline-block; */
     height: 40px;
     padding: 0 10px;
     border-radius: 6px;
@@ -486,45 +465,169 @@ html {
     cursor: pointer;
 }
 
-
 /* **** Social and Copyright ***** */
-.footer__copy{
+.footer__copy {
     padding: 50px 0 15px;
     text-align: center;
 }
 
-.footer__icon{
+.footer__icon {
     margin-bottom: 40px;
 }
 
-.footer__img{
+.footer__img {
     width: 30px;
 }
 
-.footer__copyright{
+.footer__copyright {
     font-weight: 100;
     font-size: 0.9rem;
     padding-bottom: 50px;
 }
 
+
+
 /* =============================================== */
 /****************** MEDIA QUERIES **************** */
+/* =============================================== */
 
+
+/* =============================================== */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
-    /* ********************** HEADER ***************** */
+    /* ********************** HEADER (min-width: 576px) ***************** */
 
-    /* **** Nav ***** */
+    /* **** Hero (min-width: 576px) ***** */
+    .hero__title {
+        font-size: 2.3rem;
+    }
+    
+    .hero__paragraph {
+        line-height: 1.3;
+    }
+
+    /* ********************** MAIN (min-width: 576px) ***************** */
+
+    /* **** Features (min-width: 576px) ***** */
+    .features__title {
+        font-size: 2rem;
+    }
+
+    .features__icon {
+        width: 36px;
+        height: 33px;
+    }
+
+    .features__paragraph {
+        line-height: 1.5;
+    }
+
+    /* **** Programs (min-width: 576px) ***** */
+    .programs__title {
+        font-size: 2rem;
+    }
+
+    .programs__container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    }
+
+    .programs__item {
+        padding-left: 90px;
+    }
+
+    .programs__icon {
+        width: 43px;
+        height: 36px;
+    }
+
+    /* **** Frequent Questions (min-width: 576px) ***** */
+    .questions__title {
+        font-size: 1.9rem;
+    }
+    
+    .questions__subtitle {
+        line-height: 1.2;
+    }
+
+    .questions__img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .questions__show {
+        line-height: 1.2;
+    }
+
+    /* **** Reviews (min-width: 576px) ***** */
+    .reviews__titte {
+        font-size: 2rem;
+    }
+
+    .reviews__arrow {
+        width: 31px;
+        height: 31px;
+    }
+
+    .reviews__testimony {
+        line-height: 1.4;
+    }
+    
+    .reviews__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* **** Offer (min-width: 576px) ***** */
+    .offer__title {
+        font-size: 2.1rem;
+    }
+
+    .offer__paragraph {
+        line-height: 1.5;
+    }
+
+    /* ********************** FOOTER (min-width: 576px) ***************** */
+
+    /* **** Nav Footer (min-width: 576px) ***** */
+    .nav__title--footer {
+        font-size: 1.6rem;
+    }
+
+    /* **** Newsletter (min-width: 576px) ***** */
+    .footer__subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .footer__paragraph {
+        line-height: 1.2;
+    }
+    
+    .footer__input {
+        margin-right: 10px;
+        flex: 1;
+    } 
+    
+    /* **** Social and Copyright (min-width: 576px) ***** */
+    .footer__img {
+        width: 32px;
+    }
+    
+}
+
+
+/* ====================================== */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+    /* ********************** HEADER (min-width: 768px) ***************** */
+
+    /* **** Nav (min-width: 768px) ***** */
     .nav__title {
         font-size: 1.3rem;
     }
 
-    .nav__img {
-        width: 35px;
-    }
-
-    /* **** Hero ***** */
+    /* **** Hero (min-width: 768px) ***** */
     .hero {
         font-size: 1.1rem;
     }
@@ -534,23 +637,23 @@ html {
     }
     
     .hero__paragraph {
-        line-height: 1.3;
+        line-height: 1.4;
     }
 
-    /* ********************** MAIN ***************** */
+    /* ********************** MAIN (min-width: 768px) ***************** */
 
-    /* **** Features ***** */
+    /* **** Features (min-width: 768px) ***** */
     .features__title {
         font-size: 2.1rem;
     }
 
     .features__icon {
-        width: 43px;
-        height: 37px;
+        width: 37px;
+        height: 34px;
     }
 
     .features__subtitle {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .features__paragraph {
@@ -558,9 +661,13 @@ html {
         font-size: 1.1rem;
     }
 
-    /* **** Programs ***** */
+    /* **** Programs (min-width: 768px) ***** */
     .programs__title {
         font-size: 2.1rem;
+    }
+
+    .programs__container {
+        grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     }
 
     .programs__card {
@@ -568,75 +675,78 @@ html {
     }
 
     .programs__name {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .programs__item {
-        padding-left: 50px;
+        padding-left: 105px;
     }
 
     .programs__icon {
-        width: 25%;
-        height: 40px;
+        width: 44px;
+        height: 37px;
     }
 
-    /* **** Frequent Questions ***** */
+    /* **** Frequent Questions (min-width: 768px) ***** */
     .questions__title {
         font-size: 2rem;
     }
     
     .questions__subtitle {
-        line-height: 1.2;
+        line-height: 1.3;
         font-size: 1.3rem;
     }
 
     .questions__img {
-        width: 27px;
-        height: 27px;
+        width: 26px;
+        height: 26px;
     }
     
-    .questions_show {
+    .questions__show {
+        line-height: 1.3;
         font-size: 1.1rem;
     }
 
-    /* **** Reviews ***** */
+    /* **** Reviews (min-width: 768px) ***** */
     .reviews__titte {
         font-size: 2.1rem;
     }
 
-    .reviews__arrow{
-        width: 34px;
-        height: 34px;
+    .reviews__arrow {
+        width: 32px;
+        height: 32px;
     }
 
     .reviews__subtitle {
-        font-size: 1.6rem;
-        width: 210px;
+        font-size: 1.5rem;
     }
     
-    .reviews__testimony{
-        line-height: 1.4;
+    .reviews__testimony {
+        line-height: 1.5;
         font-size: 1.1rem;
     }
     
-    .reviews__img{
+    .reviews__img {
         width: 210px;
         height: 210px;
     }
 
-    /* **** Offer ***** */
+    /* **** Offer (min-width: 768px) ***** */
     .offer {
         font-size: 1.1rem;
     }
 
     .offer__title {
         font-size: 2.2rem;
-        line-height: 1.3;
     }
 
-    /* ********************** FOOTER ***************** */
+    .offer__paragraph {
+        line-height: 1.6;
+    }
 
-    /* **** Nav Footer ***** */
+    /* ********************** FOOTER (min-width: 768px) ***************** */
+
+    /* **** Nav Footer (min-width: 768px) ***** */
     .nav__title--footer {
         font-size: 1.7rem;
     }
@@ -645,59 +755,297 @@ html {
         font-size: 1rem;
     }
     
-    /* **** Newsletter ***** */
+    /* **** Newsletter (min-width: 768px) ***** */
     .footer__subtitle {
         font-size: 1.4rem;
     }
     
     .footer__paragraph {
-        line-height: 1.2;
+        line-height: 1.3;
         font-size: 1.1rem;
     }
-
-    /* .footer__form {
-        justify-content: space-between;
-    } */
     
-    .footer__input{
+    .footer__input {
         font-size: 0.9rem;
-        margin-right: 10px;
-        flex: 1;
     } 
     
-    .footer__submit{
+    .footer__submit {
         font-size: 0.9rem;
     }
     
-    
-    /* **** Social and Copyright ***** */
-    .footer__img{
-        width: 35px;
+    /* **** Social and Copyright (min-width: 768px) ***** */
+    .footer__img {
+        width: 34px;
     }
     
-    .footer__copyright{
+    .footer__copyright {
         font-size: 1rem;
     }
 
-
-    
-
-
-
-    
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
-}
-
+/* ====================================== */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+    /* ********************** HEADER (min-width: 992px) ***************** */
+
+    /* **** Nav (min-width: 992px) ***** */
+    .nav {
+        padding: 25px
+    }
+
+    .nav__bar {
+        margin-left: auto;
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        gap: 2em;
+    }
+    
+    .nav__item {
+        list-style: none;
+        font-weight: 300;
+    }
+    
+    .nav__link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav__close {
+        display: none;
+    }
+
+    .nav__img {
+        display: none;
+    }
+
+    /* **** Hero (min-width: 992px) ***** */
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    
+    .hero__paragraph {
+        line-height: 1.5;
+    }
+
+    /* ********************** MAIN (min-width: 992px) ***************** */
+
+    /* **** Features (min-width: 992px) ***** */
+    .features__title {
+        font-size: 2.2rem;
+    }
+
+    .features__icon {
+        width: 38px;
+        height: 35px;
+    }
+
+    /* **** Programs (min-width: 992px) ***** */
+    .programs__title {
+        font-size: 2.2rem;
+    }
+
+    .programs__icon {
+        width: 45px;
+        height: 38px;
+    }
+
+    /* **** Frequent Questions (min-width: 992px) ***** */
+    .questions__title {
+        font-size: 2.1rem;
+    }
+    
+    .questions__subtitle {
+        line-height: 1.4;
+    }
+
+    .questions__img {
+        width: 27px;
+        height: 27px;
+    }
+    
+    .questions__show {
+        line-height: 1.4;
+    }
+
+    /* **** Reviews (min-width: 992px) ***** */
+    .reviews__titte {
+        font-size: 2.2rem;
+    }
+
+    .reviews__arrow {
+        width: 33px;
+        height: 33px;
+    }
+
+    .reviews__testimony {
+        line-height: 1.6;
+    }
+    
+    .reviews__img {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* **** Offer (min-width: 992px) ***** */
+    .offer__title {
+        font-size: 2.3rem;
+    }
+
+    .offer__paragraph {
+        line-height: 1.7;
+    }
+
+    /* ********************** FOOTER (min-width: 992px) ***************** */
+
+    /* **** Nav Footer (min-width: 992px) ***** */
+    .nav__title--footer {
+        font-size: 1.8rem;
+    }
+    
+    /* **** Newsletter (min-width: 992px) ***** */
+    .footer__subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .footer__paragraph {
+        line-height: 1.4;
+    }
+    
+    /* **** Social and Copyright (min-width: 992px) ***** */
+    .footer__img {
+        width: 36px;
+    }
+    
 }
 
+
+/* =================================================== */
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    /* ********************** HEADER (min-width: 1200px) ***************** */
+
+    /* **** Hero (min-width: 1200px) ***** */
+    .hero__title {
+        font-size: 2.6rem;
+    }
+    
+    .hero__paragraph {
+        line-height: 1.6;
+    }
+
+    /* ********************** MAIN (min-width: 1200px) ***************** */
+
+    /* **** Features (min-width: 1200px) ***** */
+    .features__title {
+        font-size: 2.3rem;
+    }
+
+    .features__container {
+        grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    }
+
+    .features__icon {
+        width: 39px;
+        height: 36px;
+    }
+
+    .features__subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .features__paragraph {
+        line-height: 1.6;
+    }
+
+    /* **** Programs (min-width: 1200px) ***** */
+    .programs__title {
+        font-size: 2.3rem;
+    }
+
+    .programs__name {
+        font-size: 1.8rem;
+    }
+
+    .programs__icon {
+        width: 46px;
+        height: 39px;
+    }
+
+    /* **** Frequent Questions (min-width: 1200px) ***** */
+    .questions__title {
+        font-size: 2.2rem;
+    }
+    
+    .questions__subtitle {
+        line-height: 1.5;
+        font-size: 1.4rem;
+    }
+
+    .questions__img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .questions__show {
+        line-height: 1.5;
+    }
+
+    /* **** Reviews (min-width: 1200px) ***** */
+    .reviews__titte {
+        font-size: 2.3rem;
+    }
+
+    .reviews__arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+    .reviews__subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .reviews__testimony {
+        line-height: 1.7;
+    }
+    
+    .reviews__img {
+        width: 230px;
+        height: 230px;
+    }
+
+    /* **** Offer (min-width: 1200px) ***** */
+    .offer__title {
+        font-size: 2.4rem;
+    }
+
+    .offer__paragraph {
+        line-height: 1.8;
+    }
+
+    /* ********************** FOOTER (min-width: 1200px) ***************** */
+
+    /* **** Nav Footer (min-width: 1200px) ***** */
+    .nav__title--footer {
+        font-size: 1.9rem;
+    }
+    
+    /* **** Newsletter (min-width: 1200px) ***** */
+    .footer__subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .footer__paragraph {
+        line-height: 1.5;
+    }
+    
+    /* **** Social and Copyright (min-width: 1200px) ***** */
+    .footer__img {
+        width: 38px;
+    }
 
 }
